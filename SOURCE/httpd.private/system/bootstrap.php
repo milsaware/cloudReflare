@@ -1,4 +1,5 @@
 <?php
+set_time_limit(0);
 $_GET['route'] = (isset($_GET['route']))? $_GET['route'] : 'home';
 define("VERSION", "1.5.0");
 define("SKIN", "original");
