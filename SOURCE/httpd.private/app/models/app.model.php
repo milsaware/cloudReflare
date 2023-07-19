@@ -380,7 +380,7 @@ class appModel{
 					return 0;
 				}else{
 					$name_check = 0;
-					for($i = 0; $i < count($d); $i++){
+					for($i = 0; $i < count($d['result']); $i++){
 						if($d['result'][$i]['name'] == $dns_name && $d['result'][$i]['type'] == 'A'){
 							$newurl = 'https://api.cloudflare.com/client/v4/zones/'.$zone_id.'/dns_records/'.$d['result'][$i]['id'];
 							$data = array(
